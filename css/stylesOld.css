@@ -68,3 +68,10 @@ body {
     position: absolute;
     bottom: 0px;
 }
+
+.modal-header{
+    background-color: rgba(26, 26, 134, 0.678);
+}
+.modal-body{
+    background-color: rgb(241, 206, 241);
+}

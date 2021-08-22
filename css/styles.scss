@@ -3,23 +3,22 @@ $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
 
-//Height variables
+// Height variables
 $carousel-item-height: 300px;
 
-//mixin
-@mixin zero-margin($pad-up-down, $pad-left-right) {
-    margin: 0px auto;
-    padding: $pad-up-down $pad-left-right;
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+	margin:0px auto;
+	padding: $pad-up-dn $pad-left-right;
 }
 
 .row-header{
-    @include zero-margin(0px, 0px);
+    @include zero-margin(0px,0px);
 }
 
 .row-content {
     @include zero-margin(50px,0px);
     border-bottom: 1px ridge;
-    min-height: 400px;
+    min-height:400px;
 }
 
 .footer{
@@ -28,8 +27,8 @@ $carousel-item-height: 300px;
 }
 
 .jumbotron {
-    @include zero-margin(70px, 30px);
-    background: $background-light;
+    @include zero-margin(70px,30px);
+    background: $background-light ;
     color:floralwhite;
 }
 
@@ -40,12 +39,12 @@ address{
 }
 
 body{
-    padding: 50px 0px 0px 0px;
-    z-index: 0;
+    padding:50px 0px 0px 0px;
+    z-index:0;
 }
 
-.navbar-dark{
-    background-color: $background-dark;
+.navbar-dark {
+     background-color: #9575cd;
 }
 
 .tab-content {
@@ -56,11 +55,11 @@ body{
 }
 
 .carousel {
-    background: $background-dark;
+    background:$background-dark;
 
     .carousel-item {
         height: $carousel-item-height;
-        img{
+        img {
             position: absolute;
             top: 0;
             left: 0;
@@ -73,4 +72,6 @@ body{
     right:0px;
     position: absolute;
     bottom: 0px;
+    z-index: 1;
 }
+

@@ -35,7 +35,7 @@ body {
 }
 
 .navbar-dark {
-  background-color: #512DA8;
+  background-color: #9575cd;
 }
 
 .tab-content {
@@ -64,4 +64,5 @@ body {
   right: 0px;
   position: absolute;
   bottom: 0px;
+  z-index: 1;
 }
